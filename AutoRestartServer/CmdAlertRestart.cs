@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using CommandSystem;
 using Exiled.API.Features;
 using Exiled.Permissions.Extensions;
@@ -26,7 +27,8 @@ namespace AutoRestartServer
                 response = "Абодончик, сука забыл время указать";
                 return false; 
             }
-            int conv = Convert.ToInt32(arguments.Array[0]) * 60;
+            string arg = arguments.ElementAt(0);
+            int conv = int.Parse(arg);
             ushort time = (ushort)conv;
             response = $"Рестрарт сервер через {time}м";
             Map.Broadcast(
