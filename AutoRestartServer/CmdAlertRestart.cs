@@ -22,11 +22,19 @@ namespace AutoRestartServer
                 response = "У вас нет прав.";
                 return false;
             }
+
+            if (Plugin.plugin.Config.RestartTimer)
+            {
+                response = "Таймер уже запущен";
+                return false;
+            }
+
             if (arguments.IsEmpty()) 
             {
                 response = "Абодончик, сука забыл время указать";
                 return false; 
             }
+            Plugin.plugin.Config.RestartTimer = true;
             string arg = arguments.ElementAt(0);
             int conv = int.Parse(arg) * 60;
             ushort time = (ushort)conv;
@@ -34,7 +42,7 @@ namespace AutoRestartServer
             Map.ClearBroadcasts();
             Map.Broadcast(
                 duration: time,
-                message: $"<color=#FF4500><b>ВНИМАНИЕ ТЕХ. РЕСТРАТ СЕРВЕРА ЧЕРЕЗ</color> {time}м"
+                message: $"<color=#FF4500><b>ВНИМАНИЕ ТЕХ. РЕСТРАТ СЕРВЕРА ЧЕРЕЗ</color> {arg}м"
                 );
             Timing.CallDelayed(time, () => 
             {
