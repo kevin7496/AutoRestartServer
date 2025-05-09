@@ -15,11 +15,6 @@ namespace AutoRestartServer
         public override void OnEnabled()
         {
             plugin = this;
-            Map.ClearBroadcasts();
-            Map.Broadcast(
-                duration: 20,
-                message: $"<#00FF00><b>Внимание рестрат сервера был успешно произведён.</color>\n<size=60><b>Удачной игры</b></size>"
-                );
             base.OnEnabled();
         }
         public override void OnDisabled()
