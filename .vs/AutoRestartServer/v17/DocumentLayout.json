@@ -34,7 +34,8 @@
               "RelativeToolTip": "AutoRestartServer\\Config.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T14:38:00.101Z"
+              "WhenOpened": "2025-05-09T14:38:00.101Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +45,7 @@
               "RelativeDocumentMoniker": "AutoRestartServer\\CmdAlertRestart.cs",
               "ToolTip": "C:\\Users\\\u0415\u043B\u0435\u043D\u0430\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\AutoRestartServer\\AutoRestartServer\\CmdAlertRestart.cs",
               "RelativeToolTip": "AutoRestartServer\\CmdAlertRestart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T14:27:43.143Z",
               "EditorCaption": ""
@@ -57,9 +58,10 @@
               "RelativeDocumentMoniker": "AutoRestartServer\\Plugin.cs",
               "ToolTip": "C:\\Users\\\u0415\u043B\u0435\u043D\u0430\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\AutoRestartServer\\AutoRestartServer\\Plugin.cs",
               "RelativeToolTip": "AutoRestartServer\\Plugin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T14:27:22.04Z"
+              "WhenOpened": "2025-05-09T14:27:22.04Z",
+              "EditorCaption": ""
             }
           ]
         }

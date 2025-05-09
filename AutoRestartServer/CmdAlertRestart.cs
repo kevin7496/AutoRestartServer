@@ -28,12 +28,13 @@ namespace AutoRestartServer
                 return false; 
             }
             string arg = arguments.ElementAt(0);
-            int conv = int.Parse(arg);
+            int conv = int.Parse(arg) * 60;
             ushort time = (ushort)conv;
             response = $"Рестрарт сервер через {time}м";
+            Map.ClearBroadcasts();
             Map.Broadcast(
                 duration: time,
-                message: "<color=#FF4500><b>ВНИМАНИЕ ТЕХ. РЕСТРАТ СЕРВЕРА ЧЕРЕЗ {time}м"
+                message: $"<color=#FF4500><b>ВНИМАНИЕ ТЕХ. РЕСТРАТ СЕРВЕРА ЧЕРЕЗ</color> {time}м"
                 );
             Timing.CallDelayed(time, () => 
             {
