@@ -9,8 +9,8 @@ namespace AutoRestartServer
     [CommandHandler(typeof(RemoteAdminCommandHandler))]
     public class CmdAlertRestart : ICommand
     {
-        string ICommand.Command { get; } = "alertrr";
-        string[] ICommand.Aliases { get; } = { "GPT" };
+        string ICommand.Command { get; } = "technicalrr";
+        string[] ICommand.Aliases { get; } = { "tech" };
         string ICommand.Description { get; } = "Оповещение о рестрате сервера";
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
